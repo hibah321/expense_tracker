@@ -1,0 +1,99 @@
+/*global*/
+body
+{
+
+    margin:0 auto;
+    width: 100%;
+    height: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: hsl(268, 42%, 63%);
+
+}
+/*typeset*/
+h2
+{
+    font-size: 2.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/*container*/
+.container 
+{
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 30px auto;
+    box-shadow: 1px 1px 5px hsl(266, 41%, 19%);;
+    background-color: hsl(266, 50%, 54%);
+    margin: auto;
+    width:70%;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+#input > * {
+    margin: 5px;
+}
+#name , #amount
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: smaller;
+    padding: 5px;
+    margin-right: 15px;
+    margin-top: 10px;
+    border-color: transparent;
+    border-radius: 25px;
+}
+#name
+{
+    width: 60%;
+}
+#amount
+{
+    width: 15%;
+}
+button
+{
+    background-color: hsl(266, 50%, 54%);
+    border-color: transparent;
+}
+
+input[type=text]:focus
+{
+    box-shadow: 0 0 5pt 2pt #4f2f61;
+    outline-width: 0px;
+}
+/*table*/
+#table
+{
+    display: flex;
+    background-color: hsl(266, 50%, 54%);
+    margin-top: 10px;
+}
+table
+{
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+    background-color: hsl(266, 66%, 72%);
+}
+
+table td:nth-of-type(2)
+{
+    border: 1px;
+    border-style: solid;
+    margin-left: auto;
+    width: clamp(40px,0.2vw,100px);
+}
+table td:nth-of-type(1)
+{
+    border: 1px;
+    border-style: solid;
+}
+/*media*/
+@media all and (max-width:600px ){
+    .container{
+        width:90%;
+        font-size: 1.2rem;
+    }
+    
+}
